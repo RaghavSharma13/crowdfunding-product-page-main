@@ -1,0 +1,71 @@
+.modalCard{
+    display: none;
+    position:absolute;
+    /* width:80%; */
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:11;
+    visibility: hidden;
+    opacity:0;
+}
+.modalCard .Description{
+    width:100%;
+}
+.modalCard.active{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+.modalCard.active.fade-out{
+    display:none;
+}
+.modalCard .close{
+    width:20px;
+    height:20px;
+    background-image:url(../images/icon-close-modal.svg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:absolute;
+    top:0.8%;
+    right:5%;
+    cursor:pointer;
+    transition:all 200ms ease-in-out;
+}
+.modalCard .close:hover{
+    background-image:url(../images/icon-close-modal-active.svg);
+}
+.thankYouCard{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:11;
+    display:none;
+    visibility:hidden;
+    opacity:0;
+    height:350px;
+    width:70%;
+    max-width:350px;
+    background-color:white;
+    border-radius:10px;
+}
+.thankYouCard.fade-in{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+.thankYouCard.fade-out{
+    display:none;
+}
+.thankYouCard p{
+    padding:10px;
+    text-align: center;
+    color:gray;
+}
+.thankYouCard h2{
+    text-align: center;
+}

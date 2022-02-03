@@ -1,0 +1,91 @@
+.Card{
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    width:90%;
+    max-width: 730px;
+    border-radius:10px;
+    margin-bottom:25px;
+    z-index:2;
+}
+
+@media only screen and (min-width:580px){
+    .Card{
+        min-height:270px;
+    }
+    .iconBookmark{
+        position: relative;
+        margin-right:22%;
+    }
+    .iconBookmark::after{
+        content:"Bookmark";
+        height:42px;
+        width:150px;
+        position:absolute;
+        top:0px;
+        left:0px;
+        background-color:lightgray;
+        border-radius:60px;
+        text-align:center;
+        font-family: 'Commissioner',sans-serif;
+        padding:18px 0px 0px 30px;
+        font-weight: 700;
+        z-index:-1;
+    }
+    .iconBookmark.active::after{
+        color:#147b74;
+
+    }
+}
+.Card img{
+    margin-top:-55px;
+}
+.Card h2{
+    padding:40px;
+    text-align:center;
+}
+.Card p{
+    text-align:center;
+    color:gray;
+}
+.footer{
+    margin-top:30px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+}
+.btn-cta{
+    height:60px;
+    /* width:215px; */
+    flex: 0.9 0.9;
+    max-width: 215px;
+    background-color:var(--Moderate-cyan);
+    color:white;
+    border-radius:30px;
+    outline:none;
+    border:none;
+    cursor:pointer;
+    font-weight:700;
+    transition:all 300ms ease-in-out;
+}
+.btn-cta:hover{
+    background-color: var(--Dark-cyan);
+}
+.iconBookmark{
+    width:60px;
+    height:60px;
+    background-image:url(../images/icon-bookmark.svg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    cursor:pointer;
+    transition:all 300ms ease-in-out;
+    
+}
+.iconBookmark.active{
+    background-image:url(../images/icon-bookmarked.svg);
+}

@@ -1,0 +1,49 @@
+:root{
+  --Moderate-cyan: hsl(176, 50%, 47%);
+  --Dark-cyan: hsl(176, 72%, 28%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 48%);
+}
+.ProductPage{
+  width:100%;
+  height:100%;
+  background-color:lightgray;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+}
+.Pageheader{
+  padding:0px 25px;
+  width:100%;
+  min-height:300px;
+  background-image:url(./images/image-hero-mobile.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:50% 0%;
+}
+@media only screen and (min-width:580px){
+  .Pageheader{
+    min-height:400px;
+    background-image:url(./images/image-hero-desktop.jpg);
+  }
+}
+main{
+  display: flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+  margin-top: -85px;
+}
+
+.modalOverlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:10;
+  background-color:rgba(0,0,0,0.5);
+  visibility: hidden;
+  opacity:0;
+}

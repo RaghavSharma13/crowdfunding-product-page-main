@@ -1,0 +1,25 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+html{
+  overflow-x: hidden;
+  min-height:100%;
+}
+body{
+  position:relative;
+  min-height:100%;
+  width:100%;
+  font-size:16px;
+  font-family:'Commissioner',sans-serif;
+  font-weight: 400;
+}
+#root{
+  position:relative;
+  min-height:100%;
+  width:100%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
